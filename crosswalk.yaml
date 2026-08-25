@@ -1,0 +1,454 @@
+# Crosswalk de armonizacion - EEVV Nacimientos, DANE 1998-2024
+# Esquema canonico de 44 conceptos y tabla de correspondencias versionada.
+# Estados posibles por celda:
+#   presente   -> la variable existe y es comparable
+#   ausente    -> ausencia estructural (structural missing): no existia en ese catalogo
+#   renombrada -> mismo concepto bajo otro nombre de campo
+#
+# Generado a partir del diccionario consolidado. Editar aqui, no en el PDF.
+
+version: 1
+fuente: DANE - Estadisticas Vitales, microdatos de nacimientos
+periodo: 1998-2024
+
+conceptos:
+  - id: departamento_de_ocurrencia_del_nacimiento
+    concepto: "Departamento de ocurrencia del nacimiento"
+    versiones:
+      c1998_2007: { campo: "cod_dpto", estado: presente }
+      c2008_2011__2014_2019: { campo: "COD_DPTO", estado: presente }
+      c2012_2013: { campo: "COD_DPTO", estado: presente }
+      c2020: { campo: "COD_DPTO", estado: presente }
+      c2021_2023: { campo: "COD_DPTO", estado: presente }
+      c2024: { campo: "COD_DPTO", estado: presente }
+    nota: "Sin cambios de fondo"
+  - id: municipio_de_ocurrencia_del_nacimiento
+    concepto: "Municipio de ocurrencia del nacimiento"
+    versiones:
+      c1998_2007: { campo: "cod_munic", estado: presente }
+      c2008_2011__2014_2019: { campo: "COD_MUNIC", estado: presente }
+      c2012_2013: { campo: "COD_MUNIC", estado: presente }
+      c2020: { campo: "COD_MUNIC", estado: presente }
+      c2021_2023: { campo: "COD_MUNIC", estado: presente }
+      c2024: { campo: "COD_MUNIC", estado: presente }
+    nota: "Sin cambios de fondo"
+  - id: rea_del_nacimiento_urbana_rural
+    concepto: "Área del nacimiento (urbana/rural)"
+    versiones:
+      c1998_2007: { campo: "areanac", estado: presente }
+      c2008_2011__2014_2019: { campo: "AREANAC", estado: presente }
+      c2012_2013: { campo: "AREANAC", estado: presente }
+      c2020: { campo: "AREANAC", estado: presente }
+      c2021_2023: { campo: "AREANAC", estado: presente }
+      c2024: { campo: "AREANAC", estado: presente }
+    nota: "Sin cambios"
+  - id: sitio_del_parto
+    concepto: "Sitio del parto"
+    versiones:
+      c1998_2007: { campo: "sit_parto", estado: presente }
+      c2008_2011__2014_2019: { campo: "SIT_PARTO", estado: presente }
+      c2012_2013: { campo: "SIT_PARTO", estado: presente }
+      c2020: { campo: "SIT_PARTO", estado: presente }
+      c2021_2023: { campo: "SIT_PARTO", estado: presente }
+      c2024: { campo: "SIT_PARTO", estado: presente }
+    nota: "Sin cambios"
+  - id: otro_sitio_del_parto_cu_l
+    concepto: "Otro sitio del parto, ¿cuál?"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: "OTRO_SIT", estado: presente }
+      c2012_2013: { campo: "OTRO_SIT", estado: presente }
+      c2020: { campo: "OTRO_SIT", estado: presente }
+      c2021_2023: { campo: "OTRO_SIT", estado: presente }
+      c2024: { campo: "OTRO_SIT", estado: presente }
+    nota: "NUEVA desde 2008; no existía en 1998-2007"
+  - id: nombre_de_la_instituci_n_de_salud
+    concepto: "Nombre de la institución de salud"
+    versiones:
+      c1998_2007: { campo: "nom_inst", estado: presente }
+      c2008_2011__2014_2019: { campo: null, estado: ausente }
+      c2012_2013: { campo: "NOM_INST", estado: presente }
+      c2020: { campo: null, estado: ausente }
+      c2021_2023: { campo: null, estado: ausente }
+      c2024: { campo: null, estado: ausente }
+    nota: "Solo en 1998-2007 y 2012-2013"
+  - id: c_digo_de_la_instituci_n_de_salud
+    concepto: "Código de la institución de salud"
+    versiones:
+      c1998_2007: { campo: "cod_inst", estado: presente }
+      c2008_2011__2014_2019: { campo: null, estado: ausente }
+      c2012_2013: { campo: "COD_INST", estado: presente }
+      c2020: { campo: null, estado: ausente }
+      c2021_2023: { campo: null, estado: ausente }
+      c2024: { campo: null, estado: ausente }
+    nota: "Solo en 1998-2007 y 2012-2013"
+  - id: sexo_del_nacido_vivo
+    concepto: "Sexo del nacido vivo"
+    versiones:
+      c1998_2007: { campo: "sexo", estado: presente }
+      c2008_2011__2014_2019: { campo: "SEXO", estado: presente }
+      c2012_2013: { campo: "SEXO", estado: presente }
+      c2020: { campo: "SEXO", estado: presente }
+      c2021_2023: { campo: "SEXO", estado: presente }
+      c2024: { campo: "SEXO", estado: presente }
+    nota: "Sin cambios"
+  - id: peso_al_nacer
+    concepto: "Peso al nacer"
+    versiones:
+      c1998_2007: { campo: "peso_nac", estado: presente }
+      c2008_2011__2014_2019: { campo: "PESO_NAC", estado: presente }
+      c2012_2013: { campo: "PESO_NAC", estado: presente }
+      c2020: { campo: "PESO_NAC", estado: presente }
+      c2021_2023: { campo: "PESO_NAC", estado: presente }
+      c2024: { campo: "PESO_NAC", estado: presente }
+    nota: "Sin cambios"
+  - id: talla_al_nacer
+    concepto: "Talla al nacer"
+    versiones:
+      c1998_2007: { campo: "talla_nac", estado: presente }
+      c2008_2011__2014_2019: { campo: "TALLA_NAC", estado: presente }
+      c2012_2013: { campo: "TALLA_NAC", estado: presente }
+      c2020: { campo: "TALLA_NAC", estado: presente }
+      c2021_2023: { campo: "TALLA_NAC", estado: presente }
+      c2024: { campo: "TALLA_NAC", estado: presente }
+    nota: "Sin cambios"
+  - id: a_o_de_ocurrencia
+    concepto: "Año de ocurrencia"
+    versiones:
+      c1998_2007: { campo: "ano", estado: presente }
+      c2008_2011__2014_2019: { campo: "ANO", estado: presente }
+      c2012_2013: { campo: "ANO", estado: presente }
+      c2020: { campo: "ANO", estado: presente }
+      c2021_2023: { campo: "ANO", estado: presente }
+      c2024: { campo: "ANO", estado: presente }
+    nota: "Sin cambios"
+  - id: mes_de_ocurrencia
+    concepto: "Mes de ocurrencia"
+    versiones:
+      c1998_2007: { campo: "mes", estado: presente }
+      c2008_2011__2014_2019: { campo: "MES", estado: presente }
+      c2012_2013: { campo: "MES", estado: presente }
+      c2020: { campo: "MES", estado: presente }
+      c2021_2023: { campo: "MES", estado: presente }
+      c2024: { campo: "MES", estado: presente }
+    nota: "Sin cambios"
+  - id: qui_n_atendi_el_parto
+    concepto: "Quién atendió el parto"
+    versiones:
+      c1998_2007: { campo: "aten_par", estado: presente }
+      c2008_2011__2014_2019: { campo: "ATEN_PAR", estado: presente }
+      c2012_2013: { campo: "ATEN_PAR", estado: presente }
+      c2020: { campo: "ATEN_PAR", estado: presente }
+      c2021_2023: { campo: "ATEN_PAR", estado: presente }
+      c2024: { campo: "ATEN_PAR", estado: presente }
+    nota: "Sin cambios"
+  - id: atendido_por_otra_persona_cu_l
+    concepto: "Atendido por otra persona, ¿cuál?"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: null, estado: ausente }
+      c2012_2013: { campo: "OTRPARATX", estado: presente }
+      c2020: { campo: null, estado: ausente }
+      c2021_2023: { campo: null, estado: ausente }
+      c2024: { campo: null, estado: ausente }
+    nota: "NUEVA y EXCLUSIVA de 2012-2013"
+  - id: tiempo_de_gestaci_n
+    concepto: "Tiempo de gestación"
+    versiones:
+      c1998_2007: { campo: "t_ges", estado: presente }
+      c2008_2011__2014_2019: { campo: "T_GES", estado: presente }
+      c2012_2013: { campo: "T_GES", estado: presente }
+      c2020: { campo: "T_GES", estado: presente }
+      c2021_2023: { campo: "T_GES", estado: presente }
+      c2024: { campo: "T_GES", estado: presente }
+    nota: "Sin cambios"
+  - id: tiempo_de_gestaci_n_agrupado_cie
+    concepto: "Tiempo de gestación agrupado (CIE)"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: "T_GES_AGRU_CIE", estado: presente }
+      c2012_2013: { campo: null, estado: ausente }
+      c2020: { campo: null, estado: ausente }
+      c2021_2023: { campo: "T_GES_AGRU_CIE", estado: presente }
+      c2024: { campo: "T_GES_AGRU_CIE", estado: presente }
+    nota: "NUEVA desde 2008; ausente en 2012-2013 y en 2020"
+  - id: n_de_consultas_prenatales
+    concepto: "N° de consultas prenatales"
+    versiones:
+      c1998_2007: { campo: "numconsul", estado: presente }
+      c2008_2011__2014_2019: { campo: "NUMCONSUL", estado: presente }
+      c2012_2013: { campo: "NUMCONSUL", estado: presente }
+      c2020: { campo: "NUMCONSUL", estado: presente }
+      c2021_2023: { campo: "NUMCONSUL", estado: presente }
+      c2024: { campo: "NUMCONSUL", estado: presente }
+    nota: "Sin cambios"
+  - id: tipo_de_parto
+    concepto: "Tipo de parto"
+    versiones:
+      c1998_2007: { campo: "tipo_parto", estado: presente }
+      c2008_2011__2014_2019: { campo: "TIPO_PARTO", estado: presente }
+      c2012_2013: { campo: "TIPO_PARTO", estado: presente }
+      c2020: { campo: "TIPO_PARTO", estado: presente }
+      c2021_2023: { campo: "TIPO_PARTO", estado: presente }
+      c2024: { campo: "TIPO_PARTO", estado: presente }
+    nota: "Sin cambios"
+  - id: multiplicidad_del_embarazo
+    concepto: "Multiplicidad del embarazo"
+    versiones:
+      c1998_2007: { campo: "mul_parto", estado: presente }
+      c2008_2011__2014_2019: { campo: "MUL_PARTO", estado: presente }
+      c2012_2013: { campo: "MUL_PARTO", estado: presente }
+      c2020: { campo: "MUL_PARTO", estado: presente }
+      c2021_2023: { campo: "MUL_PARTO", estado: presente }
+      c2024: { campo: "MUL_PARTO", estado: presente }
+    nota: "Sin cambios"
+  - id: apgar_al_minuto
+    concepto: "APGAR al minuto"
+    versiones:
+      c1998_2007: { campo: "apgar1", estado: presente }
+      c2008_2011__2014_2019: { campo: "APGAR1", estado: presente }
+      c2012_2013: { campo: "APGAR1", estado: presente }
+      c2020: { campo: "APGAR1", estado: presente }
+      c2021_2023: { campo: "APGAR1", estado: presente }
+      c2024: { campo: "APGAR1", estado: presente }
+    nota: "Sin cambios"
+  - id: apgar_a_los_5_minutos
+    concepto: "APGAR a los 5 minutos"
+    versiones:
+      c1998_2007: { campo: "apgar2", estado: presente }
+      c2008_2011__2014_2019: { campo: "APGAR2", estado: presente }
+      c2012_2013: { campo: "APGAR2", estado: presente }
+      c2020: { campo: "APGAR2", estado: presente }
+      c2021_2023: { campo: "APGAR2", estado: presente }
+      c2024: { campo: "APGAR2", estado: presente }
+    nota: "Sin cambios"
+  - id: grupo_sangu_neo_del_nacido_vivo
+    concepto: "Grupo sanguíneo del nacido vivo"
+    versiones:
+      c1998_2007: { campo: "gru_san", estado: renombrada }
+      c2008_2011__2014_2019: { campo: "IDHEMOCLAS", estado: renombrada }
+      c2012_2013: { campo: "IDHEMOCLAS", estado: renombrada }
+      c2020: { campo: "IDHEMOCLAS", estado: renombrada }
+      c2021_2023: { campo: "IDHEMOCLAS", estado: renombrada }
+      c2024: { campo: "IDHEMOCLAS", estado: renombrada }
+    nota: "1998-2007 unía grupo+factor en 1 variable; desde 2008 se separó en 2"
+  - id: factor_rh_del_nacido_vivo
+    concepto: "Factor RH del nacido vivo"
+    versiones:
+      c1998_2007: { campo: "(incluido en gru_san)", estado: renombrada }
+      c2008_2011__2014_2019: { campo: "IDFACTORRH", estado: renombrada }
+      c2012_2013: { campo: "IDFACTORRH", estado: renombrada }
+      c2020: { campo: "IDFACTORRH", estado: renombrada }
+      c2021_2023: { campo: "IDFACTORRH", estado: renombrada }
+      c2024: { campo: "IDFACTORRH", estado: renombrada }
+    nota: "NUEVA como variable independiente desde 2008 (antes iba dentro de gru_san)"
+  - id: reconocimiento_tnico_del_nacido_vivo
+    concepto: "Reconocimiento étnico del nacido vivo"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: "IDPERTET", estado: renombrada }
+      c2012_2013: { campo: "IDPUEBLOIN", estado: renombrada }
+      c2020: { campo: "IDPERTET", estado: renombrada }
+      c2021_2023: { campo: "IDPERTET", estado: renombrada }
+      c2024: { campo: "IDPERTET", estado: renombrada }
+    nota: "NUEVA desde 2008; renombrada en 2012-2013 (IDPUEBLOIN)"
+  - id: pa_s_de_nacimiento_de_la_madre
+    concepto: "País de nacimiento de la madre"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: null, estado: ausente }
+      c2012_2013: { campo: null, estado: ausente }
+      c2020: { campo: null, estado: ausente }
+      c2021_2023: { campo: null, estado: ausente }
+      c2024: { campo: "CODPAISNACMAD", estado: presente }
+    nota: "NUEVA y EXCLUSIVA de 2024"
+  - id: edad_de_la_madre
+    concepto: "Edad de la madre"
+    versiones:
+      c1998_2007: { campo: "edad_madre", estado: presente }
+      c2008_2011__2014_2019: { campo: "EDAD_MADRE", estado: presente }
+      c2012_2013: { campo: "EDAD_MADRE", estado: presente }
+      c2020: { campo: "EDAD_MADRE", estado: presente }
+      c2021_2023: { campo: "EDAD_MADRE", estado: presente }
+      c2024: { campo: "EDAD_MADRE", estado: presente }
+    nota: "Sin cambios"
+  - id: estado_civil_conyugal_de_la_madre
+    concepto: "Estado civil/conyugal de la madre"
+    versiones:
+      c1998_2007: { campo: "est_civm", estado: presente }
+      c2008_2011__2014_2019: { campo: "EST_CIVM", estado: presente }
+      c2012_2013: { campo: "EST_CIVM", estado: presente }
+      c2020: { campo: "EST_CIVM", estado: presente }
+      c2021_2023: { campo: "EST_CIVM", estado: presente }
+      c2024: { campo: "EST_CIVM", estado: presente }
+    nota: "Categorías ampliadas desde 2008 (ver hoja Categorías)"
+  - id: nivel_educativo_de_la_madre
+    concepto: "Nivel educativo de la madre"
+    versiones:
+      c1998_2007: { campo: "niv_edum", estado: presente }
+      c2008_2011__2014_2019: { campo: "NIV_EDUM", estado: presente }
+      c2012_2013: { campo: "NIV_EDUM", estado: presente }
+      c2020: { campo: "NIV_EDUM", estado: presente }
+      c2021_2023: { campo: "NIV_EDUM", estado: presente }
+      c2024: { campo: "NIV_EDUM", estado: presente }
+    nota: "Categorías ampliadas de 9 a 14 desde 2008 (ver hoja Categorías)"
+  - id: ltimo_a_o_grado_aprobado_por_la_madre
+    concepto: "Último año/grado aprobado por la madre"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: "ULTCURMAD", estado: presente }
+      c2012_2013: { campo: "ULTCURMAD", estado: presente }
+      c2020: { campo: "ULTCURMAD", estado: presente }
+      c2021_2023: { campo: "ULTCURMAD", estado: presente }
+      c2024: { campo: "ULTCURMAD", estado: presente }
+    nota: "NUEVA desde 2008; no existía en 1998-2007"
+  - id: pa_s_de_residencia_de_la_madre_extranjero
+    concepto: "País de residencia de la madre (extranjero)"
+    versiones:
+      c1998_2007: { campo: "codpres", estado: presente }
+      c2008_2011__2014_2019: { campo: "CODPRES", estado: presente }
+      c2012_2013: { campo: "CODPRES", estado: presente }
+      c2020: { campo: "CODPRES", estado: presente }
+      c2021_2023: { campo: "CODPRES", estado: presente }
+      c2024: { campo: "CODPRES", estado: presente }
+    nota: "Sin cambios"
+  - id: departamento_de_residencia_de_la_madre
+    concepto: "Departamento de residencia de la madre"
+    versiones:
+      c1998_2007: { campo: "codptore", estado: presente }
+      c2008_2011__2014_2019: { campo: "CODPTORE", estado: presente }
+      c2012_2013: { campo: "CODPTORE", estado: presente }
+      c2020: { campo: "CODPTORE", estado: presente }
+      c2021_2023: { campo: "CODPTORE", estado: presente }
+      c2024: { campo: "CODPTORE", estado: presente }
+    nota: "Sin cambios"
+  - id: municipio_de_residencia_de_la_madre
+    concepto: "Municipio de residencia de la madre"
+    versiones:
+      c1998_2007: { campo: "codmunre", estado: presente }
+      c2008_2011__2014_2019: { campo: "CODMUNRE", estado: presente }
+      c2012_2013: { campo: "CODMUNRE", estado: presente }
+      c2020: { campo: "CODMUNRE", estado: presente }
+      c2021_2023: { campo: "CODMUNRE", estado: presente }
+      c2024: { campo: "CODMUNRE", estado: presente }
+    nota: "Sin cambios"
+  - id: rea_de_residencia_de_la_madre
+    concepto: "Área de residencia de la madre"
+    versiones:
+      c1998_2007: { campo: "area_res", estado: presente }
+      c2008_2011__2014_2019: { campo: "AREA_RES", estado: presente }
+      c2012_2013: { campo: "AREA_RES", estado: presente }
+      c2020: { campo: "AREA_RES", estado: presente }
+      c2021_2023: { campo: "AREA_RES", estado: presente }
+      c2024: { campo: "AREA_RES", estado: presente }
+    nota: "Sin cambios"
+  - id: n_de_hijos_nacidos_vivos
+    concepto: "N° de hijos nacidos vivos"
+    versiones:
+      c1998_2007: { campo: "n_hijosv", estado: presente }
+      c2008_2011__2014_2019: { campo: "N_HIJOSV", estado: presente }
+      c2012_2013: { campo: "N_HIJOSV", estado: presente }
+      c2020: { campo: "N_HIJOSV", estado: presente }
+      c2021_2023: { campo: "N_HIJOSV", estado: presente }
+      c2024: { campo: "N_HIJOSV", estado: presente }
+    nota: "Sin cambios"
+  - id: fecha_de_nacimiento_del_hijo_anterior
+    concepto: "Fecha de nacimiento del hijo anterior"
+    versiones:
+      c1998_2007: { campo: "fecha_nacm", estado: presente }
+      c2008_2011__2014_2019: { campo: "FECHA_NACM", estado: presente }
+      c2012_2013: { campo: "FECHA_NACM", estado: presente }
+      c2020: { campo: "FECHA_NACM", estado: presente }
+      c2021_2023: { campo: "FECHA_NACM", estado: presente }
+      c2024: { campo: "FECHA_NACM", estado: presente }
+    nota: "Sin cambios"
+  - id: n_de_embarazos
+    concepto: "N° de embarazos"
+    versiones:
+      c1998_2007: { campo: "n_emb", estado: presente }
+      c2008_2011__2014_2019: { campo: "N_EMB", estado: presente }
+      c2012_2013: { campo: "N_EMB", estado: presente }
+      c2020: { campo: "N_EMB", estado: presente }
+      c2021_2023: { campo: "N_EMB", estado: presente }
+      c2024: { campo: "N_EMB", estado: presente }
+    nota: "Sin cambios"
+  - id: r_gimen_de_seguridad_social_de_la_madre
+    concepto: "Régimen de seguridad social de la madre"
+    versiones:
+      c1998_2007: { campo: "seg_social", estado: presente }
+      c2008_2011__2014_2019: { campo: "SEG_SOCIAL", estado: presente }
+      c2012_2013: { campo: "SEG_SOCIAL", estado: presente }
+      c2020: { campo: "SEG_SOCIAL", estado: presente }
+      c2021_2023: { campo: "SEG_SOCIAL", estado: presente }
+      c2024: { campo: "SEG_SOCIAL", estado: presente }
+    nota: "Categorías cambiaron con la Ley 100/reformas de salud (ver hoja Categorías)"
+  - id: entidad_administradora_en_salud_de_la_madre
+    concepto: "Entidad administradora en salud de la madre"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: "IDCLASADMI", estado: presente }
+      c2012_2013: { campo: "IDCLASADMI", estado: presente }
+      c2020: { campo: "IDCLASADMI", estado: presente }
+      c2021_2023: { campo: "IDCLASADMI", estado: presente }
+      c2024: { campo: "IDCLASADMI", estado: presente }
+    nota: "NUEVA desde 2008; no existía en 1998-2007"
+  - id: nombre_de_la_entidad_administradora
+    concepto: "Nombre de la entidad administradora"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: null, estado: ausente }
+      c2012_2013: { campo: "NOMCLASAD", estado: presente }
+      c2020: { campo: null, estado: ausente }
+      c2021_2023: { campo: null, estado: ausente }
+      c2024: { campo: null, estado: ausente }
+    nota: "NUEVA y EXCLUSIVA de 2012-2013"
+  - id: edad_del_padre
+    concepto: "Edad del padre"
+    versiones:
+      c1998_2007: { campo: "edad_padre", estado: presente }
+      c2008_2011__2014_2019: { campo: "EDAD_PADRE", estado: presente }
+      c2012_2013: { campo: "EDAD_PADRE", estado: presente }
+      c2020: { campo: "EDAD_PADRE", estado: presente }
+      c2021_2023: { campo: "EDAD_PADRE", estado: presente }
+      c2024: { campo: "EDAD_PADRE", estado: presente }
+    nota: "Sin cambios"
+  - id: nivel_educativo_del_padre
+    concepto: "Nivel educativo del padre"
+    versiones:
+      c1998_2007: { campo: "niv_edup", estado: presente }
+      c2008_2011__2014_2019: { campo: "NIV_EDUP", estado: presente }
+      c2012_2013: { campo: "NIV_EDUP", estado: presente }
+      c2020: { campo: "NIV_EDUP", estado: presente }
+      c2021_2023: { campo: "NIV_EDUP", estado: presente }
+      c2024: { campo: "NIV_EDUP", estado: presente }
+    nota: "Mismo patrón de ampliación que NIV_EDUM"
+  - id: ltimo_a_o_grado_aprobado_por_el_padre
+    concepto: "Último año/grado aprobado por el padre"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: "ULTCURPAD", estado: presente }
+      c2012_2013: { campo: "ULTCURPAD", estado: presente }
+      c2020: { campo: "ULTCURPAD", estado: presente }
+      c2021_2023: { campo: "ULTCURPAD", estado: presente }
+      c2024: { campo: "ULTCURPAD", estado: presente }
+    nota: "NUEVA desde 2008; no existía en 1998-2007"
+  - id: profesi_n_de_quien_certifica_el_nacimiento
+    concepto: "Profesión de quien certifica el nacimiento"
+    versiones:
+      c1998_2007: { campo: "profesion", estado: presente }
+      c2008_2011__2014_2019: { campo: "PROFESION", estado: presente }
+      c2012_2013: { campo: "PROFESION", estado: presente }
+      c2020: { campo: "PROFESION", estado: presente }
+      c2021_2023: { campo: "PROFESION", estado: presente }
+      c2024: { campo: "PROFESION", estado: presente }
+    nota: "Sin cambios"
+  - id: fuente_del_certificado_tipo_de_formulario
+    concepto: "Fuente del certificado (tipo de formulario)"
+    versiones:
+      c1998_2007: { campo: null, estado: ausente }
+      c2008_2011__2014_2019: { campo: null, estado: ausente }
+      c2012_2013: { campo: null, estado: ausente }
+      c2020: { campo: null, estado: ausente }
+      c2021_2023: { campo: "TIPOFORMULARIO", estado: presente }
+      c2024: { campo: "TIPOFORMULARIO", estado: presente }
+    nota: "NUEVA desde 2021"
