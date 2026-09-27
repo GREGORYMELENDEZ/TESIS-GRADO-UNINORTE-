@@ -178,18 +178,30 @@ def _a_html(fig, primera: bool) -> str:
 def main() -> int:
     print(f"raiz del proyecto: {RAIZ}")
 
-    faltan = [p for p in [DIR_INTERMEDIOS / "prevalencia_municipal_anual.parquet",
-                          DIR_INTERMEDIOS / "prevalencia_departamento.parquet"]
+    # La prevalencia municipal por anio puede venir de dos sitios. El intermedio
+    # es lo que deja el analisis al correrse; el CSV de salidas/tablas es la
+    # misma tabla, y es la que viaja en el repositorio. Se usa el que exista,
+    # de modo que el atlas se puede reconstruir sin haber corrido el analisis.
+    RUTA_MUN_PARQUET = DIR_INTERMEDIOS / "prevalencia_municipal_anual.parquet"
+    RUTA_MUN_CSV     = RAIZ / "salidas" / "tablas" / "prevalencia_municipal_anual.csv"
+
+    faltan = [p for p in [DIR_INTERMEDIOS / "prevalencia_departamento.parquet"]
               if not p.exists()]
+    if not RUTA_MUN_PARQUET.exists() and not RUTA_MUN_CSV.exists():
+        faltan.append(RUTA_MUN_PARQUET)
     if faltan:
-        print("\nFaltan estos archivos, que deja 08_mapas.ipynb:")
-        for f in faltan:
-            print("   ", f)
+        print("\nFaltan estos archivos, que deja el analisis:")
+        for p in faltan:
+            print(f"    {p}")
         return 1
 
     # --- 1. Mapa municipal ---------------------------------------------------
     print("\n[1 de 3] mapa municipal ...")
-    mun = pd.read_parquet(DIR_INTERMEDIOS / "prevalencia_municipal_anual.parquet")
+    if RUTA_MUN_PARQUET.exists():
+        mun = pd.read_parquet(RUTA_MUN_PARQUET)
+    else:
+        mun = pd.read_csv(RUTA_MUN_CSV)
+        print(f"    leida de {RUTA_MUN_CSV.name} (el intermedio no esta)")
     # La tabla trae departamento y municipio por separado; el geojson usa el
     # codigo DIVIPOLA de cinco digitos, que es la concatenacion de los dos.
     mun["COD_MPIO_N"] = mapas.codigo_divipola(mun)

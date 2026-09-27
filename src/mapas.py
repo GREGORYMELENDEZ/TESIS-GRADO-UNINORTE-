@@ -571,7 +571,10 @@ def barras_animadas(tabla: pd.DataFrame, nombres: dict,
     # papel no sirve para colocar los controles: se calcula sobre el alto real.
     _ALTO = max(460, 26 * top + 230)
     _ALTO_DIBUJO = _ALTO - 110 - 140          # alto total menos margen sup e inf
-    _Y_CONTROLES = -(30 / _ALTO_DIBUJO)       # 30 px por debajo del area
+    # 62 px y no 30: entre el borde inferior del area de dibujo y los controles
+    # hay que dejar sitio para los rotulos del eje (unos 18 px) y para su titulo
+    # (unos 32 px). Con 30 px los controles caian sobre el titulo del eje.
+    _Y_CONTROLES = -(62 / _ALTO_DIBUJO)
 
     fig.update_layout(
         title=dict(text=f"{titulo}<br><sup>{tiempos[0]}</sup>",
