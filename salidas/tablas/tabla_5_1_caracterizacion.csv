@@ -1,0 +1,183 @@
+determinante,categoria,significado,n,casos,prevalencia_pct,pct_poblacion,es_ausencia
+NIV_EDUM,1,Preescolar  [solo 2008-2024],21453,1855.0,8.65,0.12,False
+NIV_EDUM,2,Básica primaria  [solo 2008-2024],1247551,96118.0,7.7,7.18,False
+NIV_EDUM,3,Básica secundaria  [solo 2008-2024],1265710,100975.0,7.98,7.28,False
+NIV_EDUM,4,Media académica o clásica  [solo 2008-2024],2151930,174161.0,8.09,12.38,False
+NIV_EDUM,5,Media técnica  [solo 2008-2024],1947817,159082.0,8.17,11.21,False
+NIV_EDUM,6,Normalista  [solo 2008-2024],485709,40289.0,8.29,2.8,False
+NIV_EDUM,7,Técnica profesional  [solo 2008-2024],388473,33087.0,8.52,2.24,False
+NIV_EDUM,8,Tecnológica  [solo 2008-2024],169264,14942.0,8.83,0.97,False
+NIV_EDUM,170,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUM,01,Preescolar  [solo 2008-2024],22102,1993.0,9.02,0.13,False
+NIV_EDUM,02,Básica primaria  [solo 2008-2024],1328770,118720.0,8.93,7.65,False
+NIV_EDUM,03,Básica secundaria  [solo 2008-2024],2213867,201088.0,9.08,12.74,False
+NIV_EDUM,04,Media académica o clásica  [solo 2008-2024],3008757,286134.0,9.51,17.31,False
+NIV_EDUM,05,Media técnica  [solo 2008-2024],187545,16139.0,8.61,1.08,False
+NIV_EDUM,06,Normalista  [solo 2008-2024],11814,847.0,7.17,0.07,False
+NIV_EDUM,07,Técnica profesional  [solo 2008-2024],637611,61845.0,9.7,3.67,False
+NIV_EDUM,08,Tecnológica  [solo 2008-2024],370912,34806.0,9.38,2.13,False
+NIV_EDUM,09,Profesional  [solo 2008-2024],989972,92996.0,9.39,5.7,False
+NIV_EDUM,10,Especialización  [solo 2008-2024],98373,10293.0,10.46,0.57,False
+NIV_EDUM,11,Maestría  [solo 2008-2024],25953,2804.0,10.8,0.15,False
+NIV_EDUM,12,Doctorado  [solo 2008-2024],1728,195.0,11.28,0.01,False
+NIV_EDUM,13,Ninguno  [solo 2008-2024],117240,12001.0,10.24,0.67,False
+NIV_EDUM,9,Profesional  [solo 2008-2024],127547,11780.0,9.24,0.73,False
+NIV_EDUM,,(nulo),556762,53622.0,9.63,3.2,False
+NIV_EDUP,1,Preescolar  [solo 2008-2024],13927,1120.0,8.04,0.08,False
+NIV_EDUP,2,Básica primaria  [solo 2008-2024],1227154,92585.0,7.54,7.06,False
+NIV_EDUP,3,Básica secundaria  [solo 2008-2024],1078553,81613.0,7.57,6.21,False
+NIV_EDUP,4,Media académica o clásica  [solo 2008-2024],2152301,173636.0,8.07,12.39,False
+NIV_EDUP,5,Media técnica  [solo 2008-2024],1406491,113195.0,8.05,8.09,False
+NIV_EDUP,6,Normalista  [solo 2008-2024],527423,42266.0,8.01,3.04,False
+NIV_EDUP,7,Técnica profesional  [solo 2008-2024],308018,25552.0,8.3,1.77,False
+NIV_EDUP,8,Tecnológica  [solo 2008-2024],185912,14943.0,8.04,1.07,False
+NIV_EDUP,01,Preescolar  [solo 2008-2024],22204,1817.0,8.18,0.13,False
+NIV_EDUP,02,Básica primaria  [solo 2008-2024],1505929,130346.0,8.66,8.67,False
+NIV_EDUP,03,Básica secundaria  [solo 2008-2024],1716845,154082.0,8.97,9.88,False
+NIV_EDUP,04,Media académica o clásica  [solo 2008-2024],2996776,288624.0,9.63,17.25,False
+NIV_EDUP,05,Media técnica  [solo 2008-2024],163464,14127.0,8.64,0.94,False
+NIV_EDUP,06,Normalista  [solo 2008-2024],7401,557.0,7.53,0.04,False
+NIV_EDUP,07,Técnica profesional  [solo 2008-2024],432457,40314.0,9.32,2.49,False
+NIV_EDUP,08,Tecnológica  [solo 2008-2024],284338,25603.0,9.0,1.64,False
+NIV_EDUP,09,Profesional  [solo 2008-2024],917877,83706.0,9.12,5.28,False
+NIV_EDUP,10,Especialización  [solo 2008-2024],79495,8077.0,10.16,0.46,False
+NIV_EDUP,11,Maestría  [solo 2008-2024],27507,2810.0,10.22,0.16,False
+NIV_EDUP,12,Doctorado  [solo 2008-2024],3268,313.0,9.58,0.02,False
+NIV_EDUP,13,Ninguno  [solo 2008-2024],171945,15722.0,9.14,0.99,False
+NIV_EDUP,9,Profesional  [solo 2008-2024],122901,11071.0,9.01,0.71,False
+NIV_EDUP,18,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,19,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,20,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,21,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,22,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,23,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,24,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,25,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,26,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,27,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,28,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,29,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,30,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,31,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,32,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,33,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,34,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,35,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,36,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,37,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,38,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,39,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,40,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,41,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,42,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,51,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,58,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+NIV_EDUP,,(nulo),2024674,203693.0,10.06,11.65,False
+SEG_SOCIAL,1,Contributivo  [solo 2008-2024],6521847,606073.0,9.29,37.53,False
+SEG_SOCIAL,2,Subsidiado  [solo 2008-2024],7637958,650741.0,8.52,43.95,False
+SEG_SOCIAL,3,Excepción  [solo 2008-2024],1847692,142041.0,7.69,10.63,False
+SEG_SOCIAL,4,Especial  [solo 2008-2024],209856,17842.0,8.5,1.21,False
+SEG_SOCIAL,5,No asegurado  [solo 2008-2024],755798,76282.0,10.09,4.35,False
+SEG_SOCIAL,18,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,19,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,20,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,21,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,22,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,23,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,24,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,25,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,26,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,27,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,28,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,29,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,30,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,32,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,33,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,34,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,35,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,36,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,37,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,39,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,40,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,44,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,45,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,52,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,31,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,46,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,99,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,11,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,6,Ignorado  [solo 2008-2024],0,0.0,,0.0,True
+SEG_SOCIAL,7,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,8,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+SEG_SOCIAL,,(nulo),403709,32793.0,8.12,2.32,False
+EST_CIVM,1,No está casada y lleva dos o más años viviendo con su pareja  [solo 2008-2024],6183961,547630.0,8.86,35.59,False
+EST_CIVM,2,No está casada y lleva menos de dos años viviendo con su pareja  [solo 2008-2024],3752199,327297.0,8.72,21.59,False
+EST_CIVM,3,"Está separada, divorciada  [solo 2008-2024]",62444,5581.0,8.94,0.36,False
+EST_CIVM,4,Está viuda  [solo 2008-2024],3870298,300285.0,7.76,22.27,False
+EST_CIVM,5,Está soltera  [solo 2008-2024],1502473,162913.0,10.84,8.65,False
+EST_CIVM,8,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+EST_CIVM,6,Está casada  [solo 2008-2024],1621543,145814.0,8.99,9.33,False
+EST_CIVM,7,sin documentar  [solo 2008-2024],0,0.0,,0.0,False
+EST_CIVM,,(nulo),383942,36252.0,9.44,2.21,False
+AREA_RES,1,Cabecera municipal,13640080,1223909.0,8.97,78.5,False
+AREA_RES,2,"Centro poblado (inspección, corregimiento o caserío)",1305139,97626.0,7.48,7.51,False
+AREA_RES,3,Rural disperso,2295024,192254.0,8.38,13.21,False
+AREA_RES,4,sin documentar,0,0.0,,0.0,False
+AREA_RES,5,sin documentar,0,0.0,,0.0,False
+AREA_RES,6,sin documentar,0,0.0,,0.0,False
+AREA_RES,7,sin documentar,0,0.0,,0.0,False
+AREA_RES,99,sin documentar,0,0.0,,0.0,False
+AREA_RES,170,sin documentar,0,0.0,,0.0,False
+AREA_RES,265,sin documentar,0,0.0,,0.0,False
+AREA_RES,400,sin documentar,0,0.0,,0.0,False
+AREA_RES,429,sin documentar,0,0.0,,0.0,False
+AREA_RES,532,sin documentar,0,0.0,,0.0,False
+AREA_RES,616,sin documentar,0,0.0,,0.0,False
+AREA_RES,665,sin documentar,0,0.0,,0.0,False
+AREA_RES,675,sin documentar,0,0.0,,0.0,False
+AREA_RES,678,sin documentar,0,0.0,,0.0,False
+AREA_RES,68,sin documentar,0,0.0,,0.0,False
+AREA_RES,708,sin documentar,0,0.0,,0.0,False
+AREA_RES,79,sin documentar,0,0.0,,0.0,False
+AREA_RES,807,sin documentar,0,0.0,,0.0,False
+AREA_RES,,(nulo),136617,11983.0,8.77,0.79,False
+IDPERTET,1,Indígena,295429,26336.0,8.91,1.7,False
+IDPERTET,2,Rom (Gitano),1263,111.0,8.79,0.01,False
+IDPERTET,3,Raizal del archipiélago de San Andrés y Providencia,6788,624.0,9.19,0.04,False
+IDPERTET,4,Palenquero de San Basilio,1486,120.0,8.08,0.01,False
+IDPERTET,5,"Negro(a), mulato(a), afrocolombiano(a) o afrodescendiente",532526,48398.0,9.09,3.06,False
+IDPERTET,6,Ninguna de las anteriores,9566870,894646.0,9.35,55.06,False
+IDPERTET,,(nulo),6972498,555537.0,7.97,40.13,False
+SEXO,1,Masculino,8924081,719839.0,8.07,51.36,False
+SEXO,2,Femenino,8452302,805729.0,9.53,48.64,False
+SEXO,4,sin documentar,0,0.0,,0.0,False
+SEXO,5,sin documentar,0,0.0,,0.0,False
+SEXO,6,sin documentar,0,0.0,,0.0,False
+SEXO,7,sin documentar,0,0.0,,0.0,False
+SEXO,8,sin documentar,0,0.0,,0.0,False
+SEXO,"1,9532E+11",sin documentar,0,0.0,,0.0,False
+SEXO,"2,3675E+11",sin documentar,0,0.0,,0.0,False
+SEXO,56650551401,sin documentar,0,0.0,,0.0,False
+SEXO,"7,0708E+11",sin documentar,0,0.0,,0.0,False
+SEXO,"7,6147E+11",sin documentar,0,0.0,,0.0,False
+SEXO,"8,6885E+11",sin documentar,0,0.0,,0.0,False
+SEXO,3,Indeterminado,477,204.0,42.77,0.0,False
+MUL_PARTO,1,Simple,16945108,1332886.0,7.87,97.52,False
+MUL_PARTO,2,Doble,304200,179924.0,59.15,1.75,False
+MUL_PARTO,3,Triple,6224,4399.0,70.68,0.04,False
+MUL_PARTO,4,Cuádruple o más,1296,245.0,18.9,0.01,False
+MUL_PARTO,,(nulo),120032,8318.0,6.93,0.69,False
+TIPO_PARTO,1,Espontáneo,10330311,678337.0,6.57,59.45,False
+TIPO_PARTO,2,Cesárea,6781209,833527.0,12.29,39.02,False
+TIPO_PARTO,3,Instrumentado,223620,10824.0,4.84,1.29,False
+TIPO_PARTO,4,Ignorado,3913,439.0,11.22,0.02,True
+TIPO_PARTO,0,sin documentar,0,0.0,,0.0,False
+TIPO_PARTO,5,sin documentar,0,0.0,,0.0,False
+TIPO_PARTO,6,sin documentar,0,0.0,,0.0,False
+TIPO_PARTO,7,sin documentar,0,0.0,,0.0,False
+TIPO_PARTO,8,sin documentar,0,0.0,,0.0,False
+TIPO_PARTO,,(nulo),37807,2645.0,7.0,0.22,False
+SIT_PARTO,1,Institución de salud,17165683,1508284.0,8.79,98.78,False
+SIT_PARTO,2,Domicilio,180775,12852.0,7.11,1.04,False
+SIT_PARTO,3,Otro,28812,4535.0,15.74,0.17,False
+SIT_PARTO,,(nulo),1590,101.0,6.35,0.01,False

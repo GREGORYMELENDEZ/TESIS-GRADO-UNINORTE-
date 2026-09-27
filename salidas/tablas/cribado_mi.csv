@@ -1,0 +1,16 @@
+variable,bloque,niveles,completitud_pct,H_X_bits,im_bits,incert_simetrica,pct_de_H_Y,nulo_p95,razon_nulo,supera_marginal,supera_condicional,retenida,via
+T_GES,obstetrica,5,100.0,0.7747,0.110425,0.183288,25.665,1.7e-05,6585.2,True,True,True,ambas
+MUL_PARTO,obstetrica,4,99.3,0.135,0.022246,0.078706,5.17,1.4e-05,1568.2,True,True,True,ambas
+TIPO_PARTO,obstetrica,4,99.78,1.058,0.007176,0.009644,1.668,1.4e-05,507.4,True,False,True,solo marginal
+NUMCONSUL,obstetrica,44,93.85,4.2835,0.006344,0.002692,1.475,0.00011,57.5,True,True,True,ambas
+EDAD_MADRE,obstetrica,9,99.79,2.3894,0.000767,0.000544,0.178,2.8e-05,27.8,True,False,True,solo marginal
+EST_CIVM,social,6,97.76,2.16,0.000608,0.000469,0.141,2.3e-05,26.4,True,False,True,solo marginal
+SEXO,obstetrica,3,100.0,0.9999,0.000539,0.000754,0.125,1.1e-05,49.1,True,False,True,solo marginal
+N_EMB,obstetrica,23,99.32,2.1823,0.00051,0.00039,0.118,6e-05,8.5,True,False,True,solo marginal
+NIV_EDUP,social,22,88.35,3.5505,0.0005,0.000251,0.116,7.3e-05,6.9,True,False,True,solo marginal
+NIV_EDUM,social,22,96.78,3.5637,0.000434,0.000217,0.101,6.5e-05,6.7,True,False,True,solo marginal
+N_HIJOSV,obstetrica,18,99.27,2.0033,0.000346,0.000284,0.08,4.8e-05,7.2,True,True,True,ambas
+SEG_SOCIAL,social,5,97.68,1.6769,0.000303,0.000288,0.07,1.8e-05,16.7,True,False,True,solo marginal
+AREA_RES,social,3,99.24,0.9385,0.000154,0.000225,0.036,1.2e-05,12.6,True,False,True,solo marginal
+SIT_PARTO,obstetrica,3,99.99,0.1029,9.5e-05,0.000358,0.022,9e-06,10.5,True,False,True,solo marginal
+IDPERTET,social,6,59.77,0.484,1.1e-05,2.4e-05,0.003,3.1e-05,0.3,False,False,False,ninguna

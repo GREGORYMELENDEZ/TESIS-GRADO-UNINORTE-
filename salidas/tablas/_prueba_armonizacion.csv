@@ -1,0 +1,12 @@
+variable,concepto,codificaciones,armonizada,codigos_en_conflicto,cuales,bloques
+NIV_EDUM,Nivel educativo de la madre,2,False,8,"2, 3, 4, 5, 6, 7, 8, 9",1998-2007 | 2008-2024
+NIV_EDUP,Nivel educativo del padre,2,False,8,"2, 3, 4, 5, 6, 7, 8, 9",1998-2007 | 2008-2024
+EST_CIVM,Estado conyugal de la madre,2,False,5,"1, 2, 3, 4, 5",1998-2007 | 2008-2024
+SEG_SOCIAL,Regimen de seguridad social de la madre,2,False,3,"3, 4, 5",1998-2007 | 2008-2024
+AREA_RES,Area de residencia de la madre,1,True,0,,1998-2024
+IDPERTET,Reconocimiento etnico del nacido vivo,1,True,0,,2008-2024
+T_GES,"Tiempo de gestacion (semanas, bandeado)",1,True,0,,1998-2024
+MUL_PARTO,Multiplicidad del parto,1,True,0,,1998-2024
+TIPO_PARTO,Tipo de parto,1,True,0,,1998-2024
+SIT_PARTO,Sitio del parto,1,True,0,,1998-2024
+SEXO,Sexo del nacido vivo,1,True,0,,1998-2024

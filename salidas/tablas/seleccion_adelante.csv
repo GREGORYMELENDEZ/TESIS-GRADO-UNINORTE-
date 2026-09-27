@@ -1,0 +1,6 @@
+paso,variable,tipo_im,im_bits,nulo_p95,razon_nulo,supera_nulo,n_estratos
+1,T_GES,marginal,0.110425,2.1e-05,5219.74,True,1
+2,MUL_PARTO,condicional,0.008797,3e-05,290.86,True,5
+3,NUMCONSUL,condicional,0.002686,0.000517,5.2,True,16
+4,N_HIJOSV,condicional,0.00248,0.001174,2.11,True,373
+5,NIV_EDUP,condicional,0.003664,0.003931,0.93,False,2062

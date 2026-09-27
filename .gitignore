@@ -1,0 +1,24 @@
+# Caches de Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Escrituras interrumpidas de parquet
+*.parcial
+
+# Auxiliares de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.blg
+*.pnd
+*.synctex.gz
+
+# Temporales del sistema y de Office
+.DS_Store
+Thumbs.db
+~$*
+*.tmp

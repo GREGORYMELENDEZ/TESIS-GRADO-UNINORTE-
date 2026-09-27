@@ -1,0 +1,5 @@
+variable,salto_2007_2008,salto_maximo_otros,salto_mediano_otros,frontera_anomala
+EDUC4_MADRE,2.45,2.54,1.16,False
+EDUC4_PADRE,1.44,2.25,0.92,False
+ESTCIV5,1.71,1.93,0.97,False
+SEG4,5.22,6.0,2.18,False

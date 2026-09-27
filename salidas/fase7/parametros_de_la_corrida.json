@@ -1,0 +1,29 @@
+{
+  "semilla": 2024,
+  "proporcion_prueba": 0.3,
+  "anio_corte_temporal": 2018,
+  "n_entrena": 2000000,
+  "n_importancia": 100000,
+  "n_boot": 300,
+  "registros": 17376860,
+  "prevalencia": 0.0878048162901698,
+  "predictores": [
+    "AREA_RES",
+    "EDAD_MADRE",
+    "EST_CIVM",
+    "MUL_PARTO",
+    "NIV_EDUM",
+    "NIV_EDUP",
+    "NUMCONSUL",
+    "N_EMB",
+    "N_HIJOSV",
+    "SEG_SOCIAL",
+    "SEXO",
+    "SIT_PARTO",
+    "TIPO_PARTO",
+    "T_GES"
+  ],
+  "clave_grupo": "MUNI_RES",
+  "particion_espacial": true,
+  "bootstrap_por_conglomerado": true
+}

@@ -1,0 +1,5 @@
+escala,descripcion,columnas_origen,columnas_destino,niveles,ordinal,apta_para_indice_concentracion
+EDUC4,"Nivel educativo alcanzado, escala comun de 4 niveles","NIV_EDUM, NIV_EDUP","EDUC4_MADRE, EDUC4_PADRE",4,True,True
+ESTCIV5,"Estado conyugal de la madre, escala comun de 5 categorias",EST_CIVM,ESTCIV5,5,False,False
+SEG4,"Regimen de afiliacion en salud, escala comun de 4 categorias",SEG_SOCIAL,SEG4,4,False,False
+SEGORD3,"Aseguramiento como gradiente socioeconomico, 3 niveles ordenados",SEG_SOCIAL,SEGORD3,3,True,True

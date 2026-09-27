@@ -1,0 +1,3 @@
+estrategia,exactitud_pct,sensibilidad_pct,auc_pr
+predecir siempre 'no bajo peso',91.21951837098302,0.0,0.0878048162901698
+asignar riesgo al azar,50.0,50.0,0.0878048162901698

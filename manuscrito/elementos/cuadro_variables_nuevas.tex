@@ -1,0 +1,26 @@
+%=======================================================================
+%  CUADRO - Variables incorporadas
+%=======================================================================
+\begin{table}[!htbp]
+\centering
+\caption{Variables incorporadas al certificado de nacido vivo con posterioridad a 1998. Elaboración propia a partir de los diccionarios de datos de las Estadísticas Vitales \citep{dane2024}.}
+\label{tab:vars-nuevas}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}p{3.4cm}p{4.2cm}p{2.9cm}X@{}}
+\toprule
+\textbf{Variable} & \textbf{Etiqueta} & \textbf{Aparece desde} & \textbf{Nota} \\
+\midrule
+\texttt{OTRO\_SIT} & Otro sitio, ¿cuál? & Desde 2008 & No existía en 1998-2007 \\
+\texttt{T\_GES\_AGRU\_CIE} & Tiempo de gestación ajustado a agrupación CIE & Desde 2008 (con huecos) & Ausente en 1998-2007; ausente en el diccionario de 2012-2013; ausente en 2020; presente 2008-2019, 2021-2024 \\
+\texttt{IDFACTORRH} & Hemoclasificación: Factor RH & Desde 2008 & Antes (1998-2007) iba unido con el grupo sanguíneo en una sola variable (gru\_san) \\
+\texttt{IDPERTET} / \texttt{IDPUEBLOIN} & Reconocimiento étnico del nacido vivo & Desde 2008 & No existía en 1998-2007; en 2012-2013 el DANE la llamó IDPUEBLOIN en vez de IDPERTET \\
+\texttt{ULTCURMAD} & Último año o grado aprobado por la madre & Desde 2008 & No existía en 1998-2007 \\
+\texttt{ULTCURPAD} & Último año o grado aprobado por el padre & Desde 2008 & No existía en 1998-2007 \\
+\texttt{IDCLASADMI} & Entidad Administradora en Salud de la madre & Desde 2008 & No existía en 1998-2007 \\
+\texttt{OTRPARATX} & El parto fue atendido por otra persona, ¿cuál? & Solo 2012-2013 & Variable exclusiva de ese diccionario; no aparece antes ni después \\
+\texttt{NOMCLASAD} & Nombre de la Administradora en Salud de la madre & Solo 2012-2013 & Variable exclusiva de ese diccionario; no aparece antes ni después \\
+\texttt{TIPOFORMULARIO} & Fuente del Certificado & Desde 2021 & No existía antes de 2021 \\
+\texttt{CODPAISNACMAD} & País de nacimiento de la madre & Solo 2024 & No existía en ningún periodo anterior \\
+\bottomrule
+\end{tabularx}
+\end{table}

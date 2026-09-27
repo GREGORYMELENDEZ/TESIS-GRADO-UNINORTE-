@@ -1,0 +1,54 @@
+grupo,variable,funcion,tipo,niveles,completitud_pct,nulos
+1 metadato,ARCHIVO_ORIGEN,"trazabilidad del procesamiento, no es variable del estudio",category,27,100.0,0
+1 metadato,CATALOGO_DANE,"trazabilidad del procesamiento, no es variable del estudio",category,13,100.0,0
+1 metadato,ESQUEMA_CODIGOS,"trazabilidad del procesamiento, no es variable del estudio",category,6,100.0,0
+1 metadato,N_VARS_ORIGEN,"trazabilidad del procesamiento, no es variable del estudio",category,6,100.0,0
+1 metadato,ANO,"trazabilidad del procesamiento, no es variable del estudio",category,39,100.0,0
+1 metadato,MES,"trazabilidad del procesamiento, no es variable del estudio",category,22,100.0,0
+1 metadato,FILA_CORRIDA,"trazabilidad del procesamiento, no es variable del estudio",bool,2,100.0,0
+1 metadato,ES_DUPLICADO_EXACTO,"trazabilidad del procesamiento, no es variable del estudio",bool,2,100.0,0
+1 metadato,FECHA_NACM,"trazabilidad del procesamiento, no es variable del estudio",category,20997,63.71,6534886
+1 metadato,IDCLASADMI,"trazabilidad del procesamiento, no es variable del estudio",category,5,55.26,8057472
+1 metadato,NOM_INST,"trazabilidad del procesamiento, no es variable del estudio",category,18757,45.41,9830661
+1 metadato,COD_INST,"trazabilidad del procesamiento, no es variable del estudio",category,7904,44.88,9927329
+1 metadato,TIPOFORMULARIO,"trazabilidad del procesamiento, no es variable del estudio",category,3,11.99,15848820
+1 metadato,NOMCLASAD,"trazabilidad del procesamiento, no es variable del estudio",category,152,7.01,16745506
+1 metadato,OTRPARATX,"trazabilidad del procesamiento, no es variable del estudio",category,683,0.03,18004085
+2 fuga,ATEN_PAR,se conoce durante o despues del parto,category,11,99.68,57110
+2 fuga,PESO_NAC,se conoce durante o despues del parto,category,8,98.15,332369
+2 fuga,TALLA_NAC,se conoce durante o despues del parto,category,11,97.94,370212
+2 fuga,APGAR1,se conoce durante o despues del parto,category,19,96.33,661359
+2 fuga,APGAR2,se conoce durante o despues del parto,category,20,95.99,722376
+2 fuga,IDHEMOCLAS,se conoce durante o despues del parto,category,9,57.34,7682683
+2 fuga,IDFACTORRH,se conoce durante o despues del parto,category,4,57.34,7683357
+2 fuga,T_GES_AGRU_CIE,se conoce durante o despues del parto,category,5,48.54,9268017
+2 fuga,GRU_SAN,se conoce durante o despues del parto,category,8,22.12,14025147
+2 fuga,OTRO_SIT,se conoce durante o despues del parto,category,4765,0.11,17989349
+3 desenlace,BPN,variable respuesta,float64,2,98.15,332369
+4 estructura,ANIO,niveles del modelo multinivel,int16,27,100.0,0
+4 estructura,COD_DPTO,niveles del modelo multinivel,category,35,100.0,0
+4 estructura,COD_MUNIC,niveles del modelo multinivel,category,648,100.0,0
+4 estructura,CODPTORE,niveles del modelo multinivel,category,40,99.63,66830
+4 estructura,CODMUNRE,niveles del modelo multinivel,category,668,99.6,72747
+5 social,CODPRES,"determinante social, objeto de la tesis",category,110,99.92,14490
+5 social,PROFESION,"determinante social, objeto de la tesis",category,8,99.77,40957
+5 social,AREA_RES,"determinante social, objeto de la tesis",category,21,98.54,263687
+5 social,EST_CIVM,"determinante social, objeto de la tesis",category,8,97.25,494381
+5 social,SEG_SOCIAL,"determinante social, objeto de la tesis",category,36,96.86,566264
+5 social,NIV_EDUM,"determinante social, objeto de la tesis",category,23,96.13,696055
+5 social,NIV_EDUP,"determinante social, objeto de la tesis",category,49,87.62,2229713
+5 social,IDPERTET,"determinante social, objeto de la tesis",category,6,58.69,7439722
+5 social,ULTCURMAD,"determinante social, objeto de la tesis",category,14,55.97,7929200
+5 social,ULTCURPAD,"determinante social, objeto de la tesis",category,14,53.21,8426288
+5 social,CODPAISNACMAD,"determinante social, objeto de la tesis",category,66,2.47,17563522
+6 obstetrica,SEXO,mediador potencial de la posicion social,category,14,100.0,0
+6 obstetrica,SIT_PARTO,mediador potencial de la posicion social,category,3,99.79,37360
+6 obstetrica,AREANAC,mediador potencial de la posicion social,category,3,99.75,45808
+6 obstetrica,EDAD_MADRE,mediador potencial de la posicion social,category,9,99.51,88704
+6 obstetrica,TIPO_PARTO,mediador potencial de la posicion social,category,9,99.27,130732
+6 obstetrica,N_EMB,mediador potencial de la posicion social,category,103,98.79,218143
+6 obstetrica,N_HIJOSV,mediador potencial de la posicion social,category,73,98.77,221230
+6 obstetrica,MUL_PARTO,mediador potencial de la posicion social,category,4,98.72,229642
+6 obstetrica,T_GES,mediador potencial de la posicion social,category,18,97.69,416288
+6 obstetrica,EDAD_PADRE,mediador potencial de la posicion social,category,118,95.82,752987
+6 obstetrica,NUMCONSUL,mediador potencial de la posicion social,category,55,92.34,1380178

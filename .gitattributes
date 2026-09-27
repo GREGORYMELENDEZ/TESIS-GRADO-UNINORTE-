@@ -1,0 +1,19 @@
+# Los cuadernos y el codigo se tratan como texto, para que el diff sea legible.
+*.ipynb text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.csv   text eol=lf
+*.tex   text eol=lf
+*.yaml  text eol=lf
+*.txt   text eol=lf
+
+# Binarios: sin conversion de fin de linea.
+*.pdf     binary
+*.png     binary
+*.zip     binary
+*.xlsx    binary
+*.parquet binary
+*.pkl     binary
+
+# Los microdatos particionados por anio
+datos/BPN_1998_2024/parquet_analitico/** binary

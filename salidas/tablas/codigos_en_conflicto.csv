@@ -1,0 +1,25 @@
+variable,codigo,1998-2007,2008-2024
+NIV_EDUM,2,Primaria completa,Básica primaria
+NIV_EDUM,3,Primaria incompleta,Básica secundaria
+NIV_EDUM,4,Secundaria completa,Media académica o clásica
+NIV_EDUM,5,Secundaria incompleta,Media técnica
+NIV_EDUM,6,Universitaria completa,Normalista
+NIV_EDUM,7,Universitaria incompleta,Técnica profesional
+NIV_EDUM,8,Ninguno,Tecnológica
+NIV_EDUM,9,Sin información,Profesional
+NIV_EDUP,2,Primaria completa,Básica primaria
+NIV_EDUP,3,Primaria incompleta,Básica secundaria
+NIV_EDUP,4,Secundaria completa,Media académica o clásica
+NIV_EDUP,5,Secundaria incompleta,Media técnica
+NIV_EDUP,6,Universitaria completa,Normalista
+NIV_EDUP,7,Universitaria incompleta,Técnica profesional
+NIV_EDUP,8,Ninguno,Tecnológica
+NIV_EDUP,9,Sin información,Profesional
+EST_CIVM,1,Soltera,No está casada y lleva dos o más años viviendo con su pareja
+EST_CIVM,2,Casada,No está casada y lleva menos de dos años viviendo con su pareja
+EST_CIVM,3,Viuda,"Está separada, divorciada"
+EST_CIVM,4,En unión libre,Está viuda
+EST_CIVM,5,Separada o divorciada,Está soltera
+SEG_SOCIAL,3,Vinculado,Excepción
+SEG_SOCIAL,4,Particular,Especial
+SEG_SOCIAL,5,Otro,No asegurado

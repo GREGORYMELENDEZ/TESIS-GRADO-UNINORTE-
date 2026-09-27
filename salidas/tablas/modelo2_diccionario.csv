@@ -1,0 +1,20 @@
+simbolo,bloque,categoria,referencia,beta,rm
+E_1,Nivel educativo materno,Primaria,ninguna educación formal o preescolar,-0.157617,0.854177
+E_2,Nivel educativo materno,Secundaria,ninguna educación formal o preescolar,-0.181147,0.834313
+E_3,Nivel educativo materno,Superior,ninguna educación formal o preescolar,-0.212645,0.808443
+C_1,Estado conyugal,Unión libre,casada,0.123264,1.131183
+C_2,Estado conyugal,Soltera,casada,0.228544,1.256768
+C_3,Estado conyugal,Separada o divorciada,casada,0.169143,1.184290
+C_4,Estado conyugal,Viuda,casada,0.090262,1.094461
+S_1,Régimen de afiliación,Especial o de excepción,contributivo,0.035276,1.035906
+S_2,Régimen de afiliación,Subsidiado,contributivo,0.070467,1.073009
+S_3,Régimen de afiliación,No asegurado,contributivo,-0.011030,0.989031
+A_1,Área de residencia,Centro poblado,cabecera municipal,-0.031722,0.968776
+A_2,Área de residencia,Rural disperso,cabecera municipal,0.092656,1.097084
+D_1,Edad materna,35 o más,de 20 a 34 años,0.325643,1.384920
+D_2,Edad materna,menor de 20,de 20 a 34 años,0.090470,1.094688
+P_1,Paridad,2 hijos,un hijo nacido vivo,-0.241963,0.785086
+P_2,Paridad,3 hijos,un hijo nacido vivo,-0.286253,0.751072
+P_3,Paridad,4 o más,un hijo nacido vivo,-0.370139,0.690639
+M_1,Multiplicidad del parto,doble,parto simple,2.993727,19.959932
+M_2,Multiplicidad del parto,triple o más,parto simple,3.138364,23.066094

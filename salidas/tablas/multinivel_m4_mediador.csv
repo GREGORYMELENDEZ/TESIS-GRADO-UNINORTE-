@@ -1,0 +1,29 @@
+termino,coeficiente,razon_momios
+intercepto,-1.6899,0.1845
+EDUC4_MADRE: Primaria vs Ninguno o preescolar,-0.0312,0.9693
+EDUC4_MADRE: Secundaria vs Ninguno o preescolar,-0.0301,0.9703
+EDUC4_MADRE: Superior vs Ninguno o preescolar,-0.0264,0.974
+ESTCIV5: Union libre vs Casada,-0.0009,0.9991
+ESTCIV5: Soltera vs Casada,0.0508,1.0521
+ESTCIV5: Separada o divorciada vs Casada,0.0098,1.0098
+ESTCIV5: Viuda vs Casada,-0.0749,0.9278
+SEG4: Especial o de excepcion vs Contributivo,-0.0918,0.9123
+SEG4: Subsidiado vs Contributivo,-0.098,0.9066
+SEG4: No asegurado vs Contributivo,-0.2728,0.7612
+AREA_RES: Centro poblado vs Cabecera,-0.0604,0.9414
+AREA_RES: Rural disperso vs Cabecera,0.0531,1.0546
+EDAD3: 35 o mas vs 20 a 34,0.3688,1.446
+EDAD3: menor de 20 vs 20 a 34,-0.0123,0.9878
+PARIDAD4: 2 hijos vs 1 hijo,-0.3112,0.7325
+PARIDAD4: 3 hijos vs 1 hijo,-0.398,0.6716
+PARIDAD4: 4 o mas vs 1 hijo,-0.5638,0.5691
+MULTIPLE3: doble vs simple,3.3133,27.4767
+MULTIPLE3: triple o mas vs simple,3.1418,23.1466
+IDPERTET: Rom vs Indigena,0.0456,1.0466
+IDPERTET: Raizal vs Indigena,0.1767,1.1933
+IDPERTET: Palenquero vs Indigena,-0.0438,0.9572
+IDPERTET: Afrodescendiente vs Indigena,0.1043,1.11
+IDPERTET: Ninguna de las anteriores vs Indigena,0.1482,1.1597
+CONSULTAS4: 1 de 1 a 3 vs 0 ninguna,-0.2998,0.7409
+CONSULTAS4: 2 de 4 a 6 vs 0 ninguna,-0.6786,0.5073
+CONSULTAS4: 3 siete o mas vs 0 ninguna,-1.3636,0.2557

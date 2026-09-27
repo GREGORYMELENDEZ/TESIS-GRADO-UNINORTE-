@@ -1,0 +1,18 @@
+cantidad,valor,significado
+sigma municipio,0.17719506459417642,desviacion tipica de los interceptos municipales
+varianza municipio,0.03139809091653435,"sigma al cuadrado, nivel municipal"
+sigma departamento,0.1692862040158241,desviacion tipica de los interceptos departamentales
+varianza departamento,0.028657818870087216,"sigma al cuadrado, nivel departamental"
+varianza individual,3.289868133696453,"pi^2/3, fijada por la formulacion de variable latente"
+CCI municipal (%),1.7927543731462814,correlacion entre dos nacimientos del mismo municipio
+CCI departamental (%),0.8554766764290669,dos nacimientos de municipios distintos del mismo departamento
+MOR municipal,1.1841456078917185,cambio mediano del momio al mudarse a otro municipio
+MOR departamental,1.1752459719434083,cambio mediano del momio al mudarse a otro departamento
+prevalencia del municipio mediano (%),7.255370850659376,"el intercepto de un logistico mixto es la mediana, no la media"
+prevalencia observada (%),8.78048162901698,prevalencia global de la muestra sobre la que se ajusto M0
+municipios,1157.0,conglomerados de nivel 2
+departamentos,33.0,conglomerados de nivel 3
+nacimientos,17376860.0,tamano de la muestra de M0
+log-verosimilitud,-6354.092671432421,en el optimo
+AIC,12714.185342864843,criterio de informacion de Akaike
+BIC,12758.197292846979,criterio bayesiano de Schwarz

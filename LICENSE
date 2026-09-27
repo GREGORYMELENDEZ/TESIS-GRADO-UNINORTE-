@@ -1,0 +1,57 @@
+Este repositorio se distribuye bajo dos licencias, segun el tipo de contenido.
+
+===============================================================================
+CODIGO  ·  Licencia MIT
+===============================================================================
+Comprende notebooks/, src/, guiones/ y cualquier otro archivo de codigo fuente.
+
+Copyright (c) 2026 Gregory Jesus Melendez
+
+Por la presente se concede permiso, libre de cargos, a cualquier persona que
+obtenga una copia de este software y de los archivos de documentacion asociados
+(el "Software"), a utilizar el Software sin restriccion, incluyendo sin
+limitacion los derechos a usar, copiar, modificar, fusionar, publicar,
+distribuir, sublicenciar y/o vender copias del Software, y a permitir a las
+personas a las que se les proporcione el Software a hacer lo mismo, sujeto a
+las siguientes condiciones:
+
+El aviso de copyright anterior y este aviso de permiso se incluiran en todas
+las copias o partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA "COMO ESTA", SIN GARANTIA DE NINGUN TIPO, EXPRESA O
+IMPLICITA, INCLUYENDO PERO NO LIMITADO A GARANTIAS DE COMERCIALIZACION,
+IDONEIDAD PARA UN PROPOSITO PARTICULAR Y NO INFRACCION. EN NINGUN CASO LOS
+AUTORES O TITULARES DEL COPYRIGHT SERAN RESPONSABLES DE NINGUNA RECLAMACION,
+DANOS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCION DE CONTRATO, AGRAVIO O
+CUALQUIER OTRO MOTIVO, DERIVADAS DE, FUERA DE O EN CONEXION CON EL SOFTWARE O
+SU USO U OTRO TIPO DE ACCIONES EN EL SOFTWARE.
+
+===============================================================================
+TEXTO, FIGURAS Y CUADROS  ·  Creative Commons Atribucion 4.0 Internacional
+===============================================================================
+Comprende manuscrito/, salidas/figuras/, salidas/tablas/, salidas/mapas/ y el
+atlas interactivo index.html.
+
+Copyright (c) 2026 Gregory Jesus Melendez
+
+Se permite compartir y adaptar este material para cualquier finalidad, incluso
+comercial, siempre que se reconozca la autoria de forma adecuada, se
+proporcione un enlace a la licencia y se indique si se han realizado cambios.
+
+Texto completo de la licencia:
+https://creativecommons.org/licenses/by/4.0/deed.es
+
+Cita sugerida:
+
+  Melendez, G. J. (2026). Desigualdades socioeconomicas, etnicas y
+  territoriales en el bajo peso al nacer en Colombia: analisis multinivel y
+  predictivo de las estadisticas vitales, 1998-2024. Tesis de Maestria en
+  Estadistica Aplicada, Universidad del Norte, Barranquilla, Colombia.
+
+===============================================================================
+DATOS
+===============================================================================
+Los microdatos de las Estadisticas Vitales son del Departamento Administrativo
+Nacional de Estadistica (DANE) de Colombia y se rigen por sus propias
+condiciones de uso. No se redistribuyen en este repositorio: el README explica
+como obtenerlos de la fuente oficial.
