@@ -1,0 +1,42 @@
+{
+  "title": "Desigualdades socioeconómicas, étnicas y territoriales en el bajo peso al nacer en Colombia: análisis multinivel y predictivo de las estadísticas vitales, 1998–2024",
+  "description": "<p>Código, datos intermedios, salidas y manuscrito completo de la tesis de Maestría en Estadística Aplicada de la Universidad del Norte (Barranquilla, Colombia).</p><p>El trabajo analiza 17.376.860 nacidos vivos registrados en las Estadísticas Vitales del DANE entre 1998 y 2024, y examina la desigualdad socioeconómica, étnica y territorial en el bajo peso al nacer mediante índices de concentración, descomposición de Wagstaff, modelos multinivel y siete modelos de clasificación.</p><p>El repositorio incluye un cuaderno de verificación (<code>notebooks/09_verificacion.ipynb</code>) que recalcula veintisiete cantidades publicadas a partir de los datos y las contrasta con los valores del documento, de modo que cualquier persona pueda comprobar las cifras sin ejecutar el análisis completo.</p><p>Documenta además una ruptura de codificación del certificado de nacido vivo colombiano ocurrida hacia 2008, que intercambia los extremos de la escala educativa sin cambiar el nombre de la variable, y que no aparece recogida en los diccionarios oficiales publicados. El mapa de correspondencia construido para armonizar la serie se publica con el código.</p>",
+  "upload_type": "software",
+  "language": "spa",
+  "access_right": "open",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Meléndez, Gregory Jesús",
+      "affiliation": "Universidad del Norte, Barranquilla, Colombia"
+    },
+    {
+      "name": "Rubio Ortega, Lihki José",
+      "affiliation": "Universidad del Norte, Barranquilla, Colombia"
+    }
+  ],
+  "keywords": [
+    "bajo peso al nacer",
+    "low birth weight",
+    "desigualdades en salud",
+    "health inequalities",
+    "índice de concentración",
+    "concentration index",
+    "edad gestacional",
+    "gestational age",
+    "estadísticas vitales",
+    "vital statistics",
+    "análisis multinivel",
+    "Colombia",
+    "DANE",
+    "ciencia reproducible"
+  ],
+  "notes": "Los microdatos de origen son de acceso público y los publica el Departamento Administrativo Nacional de Estadística (DANE) de Colombia en su portal de microdatos anonimizados. Este repositorio no redistribuye datos identificables: los archivos incluidos son agregaciones y matrices de trabajo derivadas de esa fuente.",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/GREGORYMELENDEZ/TESIS-GRADO-UNINORTE-",
+      "scheme": "url"
+    }
+  ]
+}
