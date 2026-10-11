@@ -10,7 +10,7 @@ import pandas as pd
 from config import RUTA_DATOS, DIR_INTERMEDIOS, CONTROL
 
 
-def cargar_base() -> pd.DataFrame:
+def cargar_base(anios=None, columnas=None) -> pd.DataFrame:
     """
     Carga la matriz analitica ya construida.
 
@@ -18,6 +18,24 @@ def cargar_base() -> pd.DataFrame:
     RUTA_DATOS; reconstruirla en cada analisis seria lento y, sobre todo,
     arriesgaria producir una version distinta de la que sostiene las cifras
     del manuscrito.
+
+    anios    : iterable de anios. None = los veintisiete.
+    columnas : lista de columnas. None = las cincuenta y tres.
+
+    POR QUE SE PUEDEN PEDIR MENOS. `cargar()` ya admitia los dos argumentos y
+    esta funcion no se los pasaba, de modo que todo analisis recibia la matriz
+    entera aunque usara quince columnas. Pedir solo lo necesario no cambia
+    ninguna cifra, porque parquet es columnar y las columnas que no se piden
+    no se leen: cambia el tiempo y la memoria.
+
+    SOBRE LA MEMORIA, con cifras medidas el 11 de octubre de 2026. La matriz
+    completa ocupa 1,20 GB en reposo, con un pico de unos 2,5 GB durante la
+    concatenacion. `cargar()` lee anio por anio y convierte a `category` dentro
+    de cada uno para acotar ese pico, y concatena con `union_categoricals` para
+    que no se degrade a `object`. Un equipo con 8 GB reproduce el analisis sin
+    dificultad; el limite no esta en estos datos.
+
+    Llamarla sin argumentos se comporta exactamente como antes.
     """
     # append en vez de insert(0) para no tapar modulos del proyecto que
     # pudieran llamarse igual que alguno de esa carpeta.
@@ -26,7 +44,7 @@ def cargar_base() -> pd.DataFrame:
 
     from cargar_matriz import cargar   # noqa: E402  (import tardio a proposito)
 
-    return cargar()
+    return cargar(anios=anios, columnas=columnas)
 
 
 def verificar_contrato(df: pd.DataFrame, estricto: bool = True) -> list[str]:

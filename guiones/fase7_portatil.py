@@ -102,6 +102,26 @@ def _encontrar_raiz(inicio: Path):
 
 RAIZ_PROYECTO = _encontrar_raiz(Path(__file__).resolve().parent)
 
+# La funcion se define AQUI y no mas abajo: se la invoca a nivel de modulo
+# en la linea siguiente, y Python ejecuta el archivo de arriba abajo. Definida
+# despues del uso, el import del modulo falla con NameError. Ya paso una vez.
+def _ruta_intermedio(base, nombre):
+    """Devuelve el intermedio como archivo unico o como directorio particionado.
+
+    La muestra viaja en el repositorio particionada por anio, porque GitHub
+    rechaza archivos de mas de 100 MB. pandas lee un directorio particionado
+    igual que un archivo, de modo que basta con elegir el que exista.
+    """
+    from pathlib import Path
+    archivo = Path(base) / f"{nombre}.parquet"
+    if archivo.exists():
+        return archivo
+    directorio = Path(base) / nombre
+    if directorio.is_dir():
+        return directorio
+    return archivo          # que falle con el mensaje habitual
+
+
 if RAIZ_PROYECTO is not None:
     ORIGEN_DATOS = _ruta_intermedio(RAIZ_PROYECTO / "intermedios",
                                     "muestra_armonizada")
@@ -250,21 +270,6 @@ def guardar(df: pd.DataFrame, nombre: str, decimales: int = 5,
 #  PASO 1 · PREPARAR EL ENVIO   (se ejecuta en la maquina que tiene los datos)
 # =============================================================================
 
-def _ruta_intermedio(base, nombre):
-    """Devuelve el intermedio como archivo unico o como directorio particionado.
-
-    La muestra viaja en el repositorio particionada por anio, porque GitHub
-    rechaza archivos de mas de 100 MB. pandas lee un directorio particionado
-    igual que un archivo, de modo que basta con elegir el que exista.
-    """
-    from pathlib import Path
-    archivo = Path(base) / f"{nombre}.parquet"
-    if archivo.exists():
-        return archivo
-    directorio = Path(base) / nombre
-    if directorio.is_dir():
-        return directorio
-    return archivo          # que falle con el mensaje habitual
 
 
 def preparar() -> None:

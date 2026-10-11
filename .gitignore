@@ -22,3 +22,9 @@ __pycache__/
 Thumbs.db
 ~$*
 *.tmp
+
+# Registros de ejecucion. Son artefactos de la maquina donde se corrio, con sus
+# rutas dentro, y no resultados: cambian en cada equipo sin que cambie nada del
+# analisis. La carpeta se conserva con su .gitkeep porque los cuadernos escriben
+# ahi, pero su contenido no viaja.
+salidas/logs/*.txt
