@@ -16,7 +16,23 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from nb import md, code, escribir   # noqa: E402
 
-RAIZ_POR_DEFECTO = r"C:\Users\ASUS\Desktop\TESIS\CODIGO_VSC"
+def _raiz_por_defecto() -> str:
+    """Sube desde este archivo hasta la carpeta que contiene src/config.py.
+
+    POR QUE NO UNA RUTA FIJA: este guion viaja en el repositorio. Una ruta
+    absoluta de la maquina del autor hace que falle en cualquier otra, y falla
+    tarde, al escribir. Buscar el marcador funciona en cualquier clon y sigue
+    funcionando si se reorganizan las carpetas. Se puede forzar otra con --raiz.
+    """
+    from pathlib import Path as _P
+    aqui = _P(__file__).resolve()
+    for c in [aqui.parent, *aqui.parents]:
+        if (c / "src" / "config.py").exists():
+            return str(c)
+    return str(aqui.parents[2])      # respaldo: dos niveles por encima de guiones/generadores
+
+
+RAIZ_POR_DEFECTO = _raiz_por_defecto()
 
 C = []
 
