@@ -717,3 +717,122 @@ def cambios_de_posicion(tabla: pd.DataFrame, nombres: dict,
                   "cambio_posicion",
                   f"valor_{anio_ini}", f"valor_{anio_fin}", "cambio_valor"]]
                 .sort_values(f"posicion_{anio_fin}"))
+
+
+# =============================================================================
+# MAPA CATEGORICO ANIMADO: conglomerados, no magnitudes
+# =============================================================================
+
+def mapa_categorico_animado(tabla, geo: dict, clave: str,
+                            col_codigo: str, col_valor: str, col_tiempo: str,
+                            categorias: dict, titulo: str, ruta_html,
+                            duracion_ms: int = 700, mostrar: bool = True):
+    """
+    Mapa animado donde el color codifica una CATEGORIA y no una cantidad.
+
+    POR QUE UNA FUNCION APARTE Y NO mapa_animado: esa dibuja una escala
+    continua, y una escala continua sobre categorias miente. Sugiere que
+    "alto-alto" esta mas cerca de "alto-bajo" que de "bajo-bajo" solo porque
+    los codigos 1, 2 y 3 lo estan, y eso no significa nada. Aqui cada
+    categoria tiene su color fijo y la barra de color se sustituye por una
+    leyenda discreta.
+
+    `categorias` es un diccionario ordenado {nombre: color}. El orden fija el
+    de la leyenda, de modo que conviene listar primero lo que se quiere leer
+    primero.
+
+    La geometria viaja UNA sola vez, en el trazo base; los fotogramas solo
+    llevan el vector de codigos. Es la misma razon que se documenta en
+    mapa_animado: incrustar el GeoJSON en cada fotograma multiplica el peso
+    del archivo por el numero de anios.
+    """
+    import plotly.graph_objects as go
+    from pathlib import Path as _P
+
+    ruta_html = _P(ruta_html)
+    nombres_cat = list(categorias.keys())
+    codigo_de = {c: i for i, c in enumerate(nombres_cat)}
+    n = len(nombres_cat)
+
+    # Orden de los poligonos: el vector z de cada fotograma debe seguirlo.
+    codigos = [f["properties"][clave] for f in geo["features"]]
+    nombres = nombres_territorios(geo, clave)
+    lista_nombres = [nombres.get(c, c) for c in codigos]
+
+    piv = (tabla.pivot_table(index=col_codigo, columns=col_tiempo,
+                             values=col_valor, aggfunc="first")
+                .reindex(codigos))
+    tiempos = sorted(piv.columns)
+
+    # Escala discreta: n bloques de color de igual anchura. Los limites se
+    # repiten a proposito para que plotly no interpole entre dos categorias.
+    escala = []
+    for i, c in enumerate(nombres_cat):
+        escala.append([i / n, categorias[c]])
+        escala.append([(i + 1) / n, categorias[c]])
+
+    def zeta(t):
+        return [codigo_de.get(v, 0) + 0.5 for v in piv[t]]
+
+    def datos(t):
+        return [[nm, str(v)] for nm, v in zip(lista_nombres, piv[t])]
+
+    plantilla = "<b>%{customdata[0]}</b><br>%{customdata[1]}<extra></extra>"
+
+    base = go.Choropleth(
+        geojson=geo, locations=codigos, featureidkey=f"properties.{clave}",
+        z=zeta(tiempos[0]), colorscale=escala, zmin=0, zmax=n,
+        marker_line_width=0.12, marker_line_color="white",
+        customdata=datos(tiempos[0]), hovertemplate=plantilla,
+        showscale=False,
+    )
+
+    # La leyenda se compone con trazos vacios, uno por categoria. Es la unica
+    # forma de obtener una leyenda discreta junto a un choropleth.
+    leyenda = [go.Scattergeo(lon=[None], lat=[None], mode="markers",
+                             marker=dict(size=11, color=categorias[c]),
+                             name=c, showlegend=True)
+               for c in nombres_cat]
+
+    fotogramas = [go.Frame(name=str(t),
+                           data=[go.Choropleth(z=zeta(t), customdata=datos(t))],
+                           traces=[0])
+                  for t in tiempos]
+
+    fig = go.Figure(data=[base, *leyenda], frames=fotogramas)
+    fig.update_geos(fitbounds="locations", visible=False)
+    fig.update_layout(
+        title=dict(text=f"{titulo}<br><sup>{tiempos[0]}</sup>", x=0.5),
+        margin=dict(l=0, r=0, t=70, b=0), height=720,
+        legend=dict(title="", orientation="h", yanchor="bottom", y=-0.04,
+                    xanchor="center", x=0.5),
+        updatemenus=[dict(
+            type="buttons", showactive=False, x=0.02, y=0.06,
+            buttons=[
+                dict(label="Reproducir", method="animate",
+                     args=[None, dict(frame=dict(duration=duracion_ms, redraw=True),
+                                      fromcurrent=True, transition=dict(duration=0))]),
+                dict(label="Pausa", method="animate",
+                     args=[[None], dict(frame=dict(duration=0, redraw=False),
+                                        mode="immediate")]),
+            ])],
+        sliders=[dict(
+            active=0, x=0.12, len=0.84, y=0.03,
+            currentvalue=dict(prefix="Año  ", font=dict(size=15)),
+            steps=[dict(method="animate", label=str(t),
+                        args=[[str(t)], dict(mode="immediate",
+                                             frame=dict(duration=0, redraw=True),
+                                             transition=dict(duration=0))])
+                   for t in tiempos])],
+    )
+
+    ruta_html.parent.mkdir(parents=True, exist_ok=True)
+    fig.write_html(ruta_html, include_plotlyjs="cdn", auto_play=False)
+    print(f"mapa animado guardado: {ruta_html.name} "
+          f"({ruta_html.stat().st_size / 1e6:.1f} MB, {len(tiempos)} anios)")
+    if mostrar:
+        try:
+            fig.show()
+        except Exception:
+            pass
+    return fig
