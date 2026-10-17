@@ -88,8 +88,13 @@ def _localizar_datos() -> str:
         "Dos formas de arreglarlo:\n"
         f"  1. Coloca la carpeta {_SUBCARPETA} dentro de una carpeta 'datos' "
         "al lado del codigo.\n"
-        "  2. O define la variable de entorno BPN_DATOS con su ruta:\n"
-        f'       set BPN_DATOS=D:\\ruta\\a\\{_SUBCARPETA}'
+        "  2. O define la variable de entorno BPN_DATOS con su ruta.\n"
+        # La sintaxis cambia segun el sistema, y dar la equivocada deja al
+        # lector probando una orden que su terminal no entiende. Se dan las
+        # dos y se senala cual corresponde a este equipo.
+        f"     en Windows:        set BPN_DATOS=D:\\ruta\\a\\{_SUBCARPETA}\n"
+        f"     en macOS o Linux:  export BPN_DATOS=/ruta/a/{_SUBCARPETA}\n"
+        f"     (este equipo es {'Windows' if os.name == 'nt' else 'macOS o Linux'})"
     )
 
 

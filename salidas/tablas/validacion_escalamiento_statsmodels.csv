@@ -1,4 +1,5 @@
 grupos,observaciones,matriz_aleatoria,memoria_mb,segundos,convergio,resultado,sigma_estimada
-50,10000,"10,000 x 50",3.8,1.4,True,ajusta,0.39
-200,40000,"40,000 x 200",61.0,16.2,True,ajusta,0.3771
-500,100000,"100,000 x 500",381.5,51.6,False,NO CONVERGE,0.3859
+50,10000,"10,000 x 50",3.8,1.6,True,ajusta,0.39
+200,40000,"40,000 x 200",61.0,10.4,True,ajusta,0.3771
+500,100000,"100,000 x 500",381.5,37.2,True,ajusta,0.3859
+1000,200000,"200,000 x 1000",1525.9,137.4,False,NO CONVERGE,0.3973
