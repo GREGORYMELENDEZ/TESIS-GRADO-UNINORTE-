@@ -38,11 +38,22 @@ echo
 
 # --- 0. Localizar Python ---------------------------------------------
 # En macOS, `python` a secas puede no existir o ser una version vieja del
-# sistema. Se prueban los nombres en orden y se exige 3.10 o superior.
+# sistema. Se prueban los nombres de mas nuevo a mas viejo y se toma el
+# primero que sirva.
+#
+# EL MINIMO ES 3.9 Y NO 3.10, y conviene explicar por que: el analisis de
+# la tesis se ejecuto en 3.9.15, de manera que rechazar 3.9 seria rechazar
+# el entorno con el que se obtuvieron los resultados que el documento
+# reporta. El codigo corre en 3.9 porque los modulos de src que anotan con
+# la forma  X | None  abren con  from __future__ import annotations .
+#
+# Se sigue prefiriendo 3.10 o superior, donde esa sintaxis es nativa y no
+# depende de ese mecanismo, y por eso el bucle empieza por las versiones
+# mas nuevas. Pero si en el equipo solo hay 3.9, se instala y se avisa.
 PY=""
-for CANDIDATO in python3.12 python3.11 python3.10 python3; do
+for CANDIDATO in python3.13 python3.12 python3.11 python3.10 python3 python3.9; do
     if command -v "$CANDIDATO" >/dev/null 2>&1; then
-        if "$CANDIDATO" -c 'import sys; sys.exit(0 if sys.version_info >= (3,10) else 1)' 2>/dev/null; then
+        if "$CANDIDATO" -c 'import sys; sys.exit(0 if sys.version_info >= (3,9) else 1)' 2>/dev/null; then
             PY="$CANDIDATO"
             break
         fi
@@ -50,7 +61,7 @@ for CANDIDATO in python3.12 python3.11 python3.10 python3; do
 done
 
 if [ -z "$PY" ]; then
-    echo "  ERROR: no encuentro Python 3.10 o superior en este equipo."
+    echo "  ERROR: no encuentro Python 3.9 o superior en este equipo."
     echo
     echo "  En macOS, la forma mas simple es instalarlo con Homebrew:"
     echo "      brew install python@3.12"
@@ -62,6 +73,14 @@ fi
 
 echo "  [0 de 4] Python encontrado:"
 "$PY" --version
+if ! "$PY" -c 'import sys; sys.exit(0 if sys.version_info >= (3,10) else 1)' 2>/dev/null; then
+    echo
+    echo "           AVISO: esta es la serie 3.9, la misma con la que se ejecuto"
+    echo "           el analisis, de modo que reproduce sin problema. Para un"
+    echo "           equipo nuevo se recomienda 3.10 o superior: alli la sintaxis"
+    echo "           de anotaciones del proyecto es nativa, y la serie 3.9 dejo"
+    echo "           de recibir parches de seguridad el 31 de octubre de 2025."
+fi
 echo
 
 # --- 1. El entorno virtual -------------------------------------------

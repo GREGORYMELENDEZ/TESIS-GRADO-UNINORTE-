@@ -1,0 +1,101 @@
+cuaderno,etiqueta,segundos
+01_eda.ipynb,carga de la base,21.2
+01_eda.ipynb,completitud por anio,1.4
+01_eda.ipynb,exclusiones,4.4
+01_eda.ipynb,prevalencia anual,0.1
+01_eda.ipynb,V de Cramer contra BPN,2.1
+01_eda.ipynb,matriz de V de Cramer,11.0
+01b_armonizacion.ipynb,lectura de la muestra analitica,0.2
+01b_armonizacion.ipynb,construccion de la muestra armonizada,5.0
+01b_armonizacion.ipynb,relectura de las columnas armonizadas,0.1
+02_cribado_mi.ipynb,lectura de la muestra analitica,0.2
+02_cribado_mi.ipynb,informacion mutua marginal + nulos,14.3
+02_cribado_mi.ipynb,seleccion hacia adelante,12.3
+02_cribado_mi.ipynb,matriz de interaccion,1.0
+03_desigualdad.ipynb,lectura de la muestra armonizada,0.1
+03_desigualdad.ipynb,"bootstrap, 1000 replicas",0.1
+03_desigualdad.ipynb,serie anual,0.7
+03_desigualdad.ipynb,serie anual del ordenamiento alternativo,0.6
+04_multinivel.ipynb,lectura,0.2
+04_multinivel.ipynb,M0,0.0
+04_multinivel.ipynb,M1,41.9
+04_multinivel.ipynb,M2,324.0
+04_multinivel.ipynb,M1 sobre la submuestra de M2,35.8
+04_multinivel.ipynb,M3,438.0
+04_multinivel.ipynb,M2 sobre submuestra,186.0
+04_multinivel.ipynb,M4,1158.0
+04_multinivel.ipynb,M3 sobre la submuestra de M4,564.0
+05_descomposicion.ipynb,lectura de la muestra armonizada,0.2
+05_descomposicion.ipynb,descomposicion sobre la muestra completa,1.0
+05_descomposicion.ipynb,descomposicion sin la educacion entre los regresores,1.0
+05_descomposicion.ipynb,bootstrap de 500 replicas,4.7
+05_descomposicion.ipynb,descomposicion con ordenamiento por aseguramiento,1.0
+05_descomposicion.ipynb,descomposicion 1998-2009 (ascenso),0.6
+05_descomposicion.ipynb,descomposicion 2010-2018 (descenso),0.4
+05_descomposicion.ipynb,descomposicion 2019-2024 (negativo),0.2
+06_sensibilidad.ipynb,lectura,0.1
+06_sensibilidad.ipynb,cotas,0.8
+06_sensibilidad.ipynb,quintiles por anio,2.2
+06_sensibilidad.ipynb,series anuales,1.3
+07_clasificacion.ipynb,lectura de la muestra armonizada,0.2
+07_clasificacion.ipynb,escritura del archivo de envio,2.9
+07_clasificacion.ipynb,lectura de datos_fase7.parquet,0.2
+07_clasificacion.ipynb,aleatoria 70/30 · Logistica,2.3
+07_clasificacion.ipynb,aleatoria 70/30 · Lasso,162.8
+07_clasificacion.ipynb,aleatoria 70/30 · Ridge,2.2
+07_clasificacion.ipynb,aleatoria 70/30 · Arbol,2.8
+07_clasificacion.ipynb,aleatoria 70/30 · Bosque aleatorio,41.3
+07_clasificacion.ipynb,aleatoria 70/30 · Gradient boosting,8.1
+07_clasificacion.ipynb,aleatoria 70/30 · Perceptron multicapa,83.7
+07_clasificacion.ipynb,aleatoria 70/30 · Boosting categorico,9.1
+07_clasificacion.ipynb,"TODO el entrenamiento, particion 70/30",396.4
+07_clasificacion.ipynb,solo social · Logistica,0.9
+07_clasificacion.ipynb,solo social · Lasso,148.2
+07_clasificacion.ipynb,solo social · Ridge,0.9
+07_clasificacion.ipynb,solo social · Arbol,1.2
+07_clasificacion.ipynb,solo social · Bosque aleatorio,43.8
+07_clasificacion.ipynb,solo social · Gradient boosting,3.8
+07_clasificacion.ipynb,solo social · Perceptron multicapa,149.8
+07_clasificacion.ipynb,solo social · Boosting categorico,6.8
+07_clasificacion.ipynb,entrenamiento con el bloque social,414.3
+07_clasificacion.ipynb,mitad · Logistica,1.8
+07_clasificacion.ipynb,mitad · Lasso,71.7
+07_clasificacion.ipynb,mitad · Ridge,1.9
+07_clasificacion.ipynb,mitad · Arbol,1.4
+07_clasificacion.ipynb,mitad · Bosque aleatorio,33.7
+07_clasificacion.ipynb,mitad · Gradient boosting,9.5
+07_clasificacion.ipynb,mitad · Perceptron multicapa,69.7
+07_clasificacion.ipynb,mitad · Boosting categorico,7.8
+07_clasificacion.ipynb,entrenamiento con la mitad de la submuestra,289.7
+07_clasificacion.ipynb,temporal · Logistica,2.8
+07_clasificacion.ipynb,temporal · Lasso,292.8
+07_clasificacion.ipynb,temporal · Ridge,4.2
+07_clasificacion.ipynb,temporal · Arbol,4.4
+07_clasificacion.ipynb,temporal · Bosque aleatorio,86.0
+07_clasificacion.ipynb,temporal · Gradient boosting,11.0
+07_clasificacion.ipynb,temporal · Perceptron multicapa,112.9
+07_clasificacion.ipynb,temporal · Boosting categorico,6.3
+07_clasificacion.ipynb,"TODO el entrenamiento, particion temporal",596.2
+07_clasificacion.ipynb,espacial · Logistica,2.5
+07_clasificacion.ipynb,espacial · Lasso,101.7
+07_clasificacion.ipynb,espacial · Ridge,2.5
+07_clasificacion.ipynb,espacial · Arbol,2.7
+07_clasificacion.ipynb,espacial · Bosque aleatorio,42.8
+07_clasificacion.ipynb,espacial · Gradient boosting,8.0
+07_clasificacion.ipynb,espacial · Perceptron multicapa,390.5
+07_clasificacion.ipynb,espacial · Boosting categorico,7.0
+07_clasificacion.ipynb,"TODO el entrenamiento, particion espacial",636.3
+07_clasificacion.ipynb,importancia · Logistica,4.3
+07_clasificacion.ipynb,importancia · Lasso,2.3
+07_clasificacion.ipynb,importancia · Ridge,2.2
+07_clasificacion.ipynb,importancia · Arbol,0.3
+07_clasificacion.ipynb,importancia · Bosque aleatorio,12.2
+07_clasificacion.ipynb,importancia · Gradient boosting,4.4
+07_clasificacion.ipynb,importancia · Perceptron multicapa,7.6
+07_clasificacion.ipynb,importancia · Boosting categorico,4.4
+07_clasificacion.ipynb,bootstrap de 300 replicas,6089.7
+08_mapas.ipynb,agregacion territorial,1.2
+08_mapas.ipynb,mapa municipal animado,0.8
+A1_validacion_estimador.ipynb,ajuste sobre datos individuales,2.3
+A1_validacion_estimador.ipynb,ajuste sobre celdas binomiales,0.0
+A1_validacion_estimador.ipynb,5 replicas de tres niveles,12.6

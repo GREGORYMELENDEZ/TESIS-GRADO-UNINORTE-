@@ -65,12 +65,40 @@ print("=" * 70)
 print()
 
 # --- 1. Python ---------------------------------------------------------------
+# POR QUE 3.9 PASA LA COMPROBACION, AUNQUE SE RECOMIENDE 3.10
+#
+#     Hasta la v85 este bloque rechazaba cualquier version anterior a 3.10 y
+#     daba como razon que "el proyecto usa sintaxis de 3.10 o mas". Era falso,
+#     y ademas rechazaba el propio entorno en el que se obtuvieron los
+#     resultados: el analisis se ejecuto en 3.9.15 en los dos equipos, y asi
+#     lo registran los sellos de los catorce cuadernos.
+#
+#     El codigo corre en 3.9 porque los seis modulos de src que anotan con la
+#     forma  X | None  abren con  from __future__ import annotations , que
+#     difiere la evaluacion de las anotaciones y las deja como texto. Es un
+#     mecanismo de compatibilidad, no una propiedad del lenguaje: un modulo
+#     nuevo que use esa sintaxis SIN la instruccion falla en 3.9 al
+#     importarse. Por eso 3.10 o superior sigue siendo lo recomendado, y por
+#     eso el aviso explica la razon en lugar de limitarse a pedirlo.
+#
+#     El corte duro se mantiene en 3.8: por debajo de 3.9 hay construcciones
+#     del proyecto que no funcionan ni con el import de __future__.
+MINIMA = (3, 9)
+RECOMENDADA = (3, 10)
+
 v = sys.version_info
-if v >= (3, 10):
+if v >= RECOMENDADA:
     linea(VERDE, f"Python {v.major}.{v.minor}.{v.micro}")
+elif v >= MINIMA:
+    linea(AVISO, f"Python {v.major}.{v.minor}.{v.micro}: corre, pero se recomienda 3.10 o superior")
+    print("         -> El codigo es compatible con 3.9 gracias a")
+    print("            'from __future__ import annotations'. En 3.10 la sintaxis")
+    print("            es nativa y no depende de ese mecanismo. Ademas, la serie")
+    print("            3.9 dejo de recibir parches de seguridad el 31/10/2025.")
+    print("         -> No hay que hacer nada: el analisis se ejecuto en 3.9.15.")
 else:
     fallo(
-        f"Python {v.major}.{v.minor}: el proyecto usa sintaxis de 3.10 o mas",
+        f"Python {v.major}.{v.minor}: el proyecto necesita 3.9 como minimo",
         "Instala Python 3.11 desde python.org y vuelve a crear el entorno.",
     )
 
